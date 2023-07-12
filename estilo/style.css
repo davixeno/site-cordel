@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte01: 'Luckiest Guy', cursive;
+    --fonte02: 'Sriracha', cursive;
+}
+
+body, html {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header  h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: var(--fonte01);
+    font-size: 8vw;
+}
+
+header p {
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+section p {
+    font-family: var(--fonte02);
+    font-size: 2.5vw;
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color:  white;
+}
+
+section.imagem {
+    background-color: rgba(37, 37, 37, 0.911);
+    color: white;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 10px;
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
